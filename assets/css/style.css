@@ -1,8 +1,9 @@
 body {
-	background: #415a6c;
+	background: #F6F6F6;
+	color: #202020;
+	user-select: none;
 	margin: 0;
 	overflow: hidden;
-	user-select: none;
 }
 
 img {
@@ -12,10 +13,10 @@ img {
 .parallax {
 	perspective: 3px;
 	height: 100vh;
-	overflow-y: auto;
 	overflow-x: hidden;
-	-webkit-perspective-origin-x:100%;
-	perspective-origin-x: 100%; 
+	overflow-y: auto;
+	-webkit-perspective-origin-x: 100%;
+	perspective-origin-x: 100%;
 }
 
 .parallax__group {
@@ -25,41 +26,527 @@ img {
 	transform-style: preserve-3d;
 }
 
+.parallax__group--title {
+	height: 130vh;
+}
+
 .parallax__layer {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	-webkit-transform-origin-x:100%;
-	transform-origin-x: 100%; 
+	-webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+}
+
+.parallax__layer--front {
+	transform: translateZ(0.5px);
 }
 
 .parallax__layer--base {
 	transform: translateZ(0);
-	top: 60vh;
 }
 
 .parallax__layer--middle {
-	transform: translateZ(-1px) scale(1.4);
-	top: 40vh;
+	transform: translateZ(-1px) scale(0.6);
 }
 
 .parallax__layer--back {
-	transform: translateZ(-2px) scale(1.7);
- 	top: 15vh;
+	transform: translateZ(-2px) scale(1);
 }
 
 .parallax__layer--deep {
-	transform: translateZ(-3px) scale(2.1);
-	top: 0vh;
+	transform: translateZ(-3px) scale(1.3);
 }
 
 .parallax__layer--deeper {
-	transform: translateZ(-4px) scale(2.7);
-	top: -5vh;
+	transform: translateZ(-4px) scale(1.6);
+}
+
+.parallax__layer--deepest {
+	transform: translateZ(-5px) scale(2);
+}
+
+.section__title--text {
+	font-family: 'Montserrat', serif;
+	font-size: 8rem;
+	position: absolute;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	line-height: 250%;
+}
+
+.section__title--lin1 {
+	position: absolute;
+	width: 14rem;
+	top: 5%;
+	left: 50%;
+}
+
+.section__title--lin2 {
+	position: absolute;
+	width: 16rem;
+	top: 15%;
+	left: 5%;
+}
+
+.section__title--tri1 {
+	position: absolute;
+	width: 6rem;
+	top: -13%;
+	left: -8%;
+}
+
+.section__title--tri2 {
+	position: absolute;
+	width: 10rem;
+	top: 30%;
+	left: 55%;
+}
+
+.section__title--wav {
+	position: absolute;
+	width: 7rem;
+	top: 85%;
+	left: -55%;
+}
+
+.section__title--dot {
+	position: absolute;
+	width: 7.5rem;
+	top: -10%;
+	left: 85%;
+}
+
+.section__title--cir {
+	position: absolute;
+	top: -35%;
+	left: 25%;
+	width: 5rem;
+}
+
+
+.section__one--text {
+	font-family: 'Montserrat', serif;
+	font-size: 2rem;
+	position: absolute;
+	top: 60%;
+	left: 15%;
+	transform: translate(-50%,-50%);
+	line-height: 200%;
+}
+
+.section__one--text h6 {
+	font-weight: 600;
+}
+
+.section__one--text2 {
+	font-family: 'Raleway', serif;
+	font-size: 1.4rem;
+	position: absolute;
+	top: 66%;
+	left: 9.4%;
+	font-weight: 200;
+}
+
+.section__one--rect {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-115%,-50%);
+	width: 70rem;
+}
+
+.section__one--wav {
+	position: absolute;
+	width: 7rem;
+	top: 125%;
+	left: -55%;
 }
 
 .section__two {
-	transform: translateY(125%);
+	transform: translateY(75%);
+	font-family: "Montserrat";
+}
+
+.section__two--rect {
+	position: absolute;
+	top: 50%;
+	left: 22%;
+	transform: translate(-50%,-50%);
+	width: 70rem;
+}
+
+.countdown-container {
+	font-family: 'Montserrat', serif;
+	font-size: 5.5rem;
+	font-weight: 500;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+
+.section__two .parallax__layer--back h5 {
+	font-size: 6rem;
+	position: absolute;
+	left: -30%;
+}
+
+.section__two .parallax__layer--base h5 {
+	font-size: 3.5rem;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+}
+
+.section__two--tri {
+	position: absolute;
+	width: 6rem;
+	top: 90%;
+	left: 70%;
+}
+
+.section__three--lin1 {
+	position: absolute;
+	width: 16rem;
+	top: 85%;
+	left: 33%;
+	z-index: -6px;
+}
+
+.section__three--lin2 {
+	position: absolute;
+	width: 20rem;
+	top: 60%;
+	left: -20%;
+}
+
+.section__three--tri1 {
+	position: absolute;
+	top: 95%;
+	left: -80%;
+	width: 12rem;
+}
+
+.section__three .parallax__layer--base h1 {
+	font-size: 6rem;
+	position: absolute;
+	top: 100%;
+	left: 35%;
+}
+
+.countdown-container span {
+	margin: 2rem;
+}
+
+.section__three {
+	font-family: 'Montserrat', serif;
+	transform: translateY(95%);
+}
+
+.section__three--gibran {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: scale(0.6);
+}
+
+.section_three--text {
+	position: absolute;
+	font-weight: 500;
+}
+
+.section__one--tri1 {
+	position: absolute;
+	top: -55%;
+	left: -80%;
+	width: 12rem;
+}
+
+.section__one--lin1 {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 18rem;
+}
+
+.section__one--dot1 {
+	position: absolute;
+	width: 1.2rem;
+	top: -28%;
+	left: 90%;
+}
+
+.section__one--cir {
+	position: absolute;
+	width: 6rem;
+	top: -35%;
+	left: 31%;
+	width: 4.7rem;
+}
+
+.section__one--dot2 {
+	position: absolute;
+	width: 4.5rem;
+	top: 45%;
+	left: 92%;
+}
+
+.section__one--tri2 {
+	position: absolute;
+	width: 8rem;
+	top: 97%;
+	left: 65%;
+}
+
+.section__two--dot1 {
+	position: absolute;
+	width: 7rem;
+	top: 45%;
+	left: 84%;
+}
+
+.section__two--dot2 {
+	position: absolute;
+	top: -25%;
+	left: 10%;
+	width: 8rem;
+	transform: rotate(90deg);
+	z-index: -1;
+}
+
+.section__two--lin1 {
+	position: absolute;
+	width: 20rem;
+	top: -5%;
+	left: 45%;
+}
+
+.section__two--cir1 {
+	position: absolute;
+	width: 10rem;
+	top: 70%;
+	left: 60%;
+}
+
+.section__two--cir2 {
+	position: absolute;
+	width: 10rem;
+	top: 90%;
+	left: -80%;
+}
+
+.section__two--lin2 {
+	position: absolute;
+	width: 18rem;
+	top: 10%;
+	left: 4%;
+}
+
+.section__two--wav {
+	position: absolute;
+	width: 4.5rem;
+	top: 100%;
+	left: -2%;
+}
+
+.section__three--dot1 {
+	position: absolute;
+	width: 1.2rem;
+	top: 70%;
+	left: 88%;
+}
+
+.section__three--dot2 {
+	position: absolute;
+	width: 10rem;
+	top: 195%;
+	left: 76%;
+}
+
+.section__three--wav {
+	position: absolute;
+	width: 4.5rem;
+	top: 150%;
+	left: -2%;	
+}
+
+.section__three--tri2 {
+	position: absolute;
+	width: 6rem;
+	top: 155%;
+	left: 60%;
+}
+
+.section__four--soko {
+	position: absolute;
+	top: 240%;
+	left: -57%;
+	transform: scale(0.7);
+}
+
+.section__four--lin1 {
+	position: absolute;
+	width: 20rem;
+	top: 180%;
+	left: -23%;
+}
+
+.section__four--irfan {
+	position: absolute;
+	top: 210%;
+	left: 10%;
+	transform: scale(0.6);
+}
+
+.section__four--dot1 {
+	position: absolute;
+	width: 8rem;
+	top: 360%;
+	left: 80%;
+}
+
+.section__four--dot2 {
+	position: absolute;
+	width: 1rem;
+	top: 220%;
+	left: 86%;
+}
+
+.section__four--wav {
+	position: absolute;
+	width: 3.2rem;
+	top: 430%;
+	left: 31%;	
+}
+
+.section__four--tri1 {
+	position: absolute;
+	width: 10rem;
+	top: 540%;
+	left: -35%;
+}
+
+.section__four--tri2 {
+	position: absolute;
+	width: 7rem;
+	top: 380%;
+	left: 5%;
+}
+
+.section__five--lin1 {
+	position: absolute;
+	width: 16rem;
+	top: 195%;
+	left: 63%;
+	z-index: -6px;
+}
+
+.section__five--lin2 {
+	position: absolute;
+	width: 20rem;
+	top: 250%;
+	left: -23%;
+}
+
+.section__five--lin3 {
+	position: absolute;
+	width: 16rem;
+	top: 270%;
+	left: 50%;
+}
+
+.section__five--rsvp {
+	position: absolute;
+	transform: scale(0.5);
+	top: 470%;
+}
+
+.section__five--cir {
+	position: absolute;
+	width: 6rem;
+	top: 470%;
+	left: 12.5%;
+}
+
+.section__five--dot1 {
+	position: absolute;
+	width: 1.2rem;
+	top: 385%;
+	left: 86%;
+}
+
+.section__five--dot2 {
+	position: absolute;
+	width: 10rem;
+	top: 780%;
+	left: 76%;
+}
+
+.section__five .parallax__layer--base h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 463%;
+	left: 37%;
+}
+
+
+
+.section__five .parallax__layer--front p {
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	top: 492%;
+	left: 46%;
+	text-align: center;
+}
+
+.section__five .parallax__layer--front a {
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top: 502%;
+	left: 53%;
+	border: 2px solid black;
+	border-radius: 15px;
+	padding: 5px 45px;
+}
+
+@keyframes rotation {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 2560px) {
+	html {
+		font-size: 133%;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	html {
+		font-size: 71%;
+	}
 }
