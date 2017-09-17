@@ -4,6 +4,7 @@ body {
 	user-select: none;
 	margin: 0;
 	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -69,7 +70,6 @@ img {
 }
 
 .section__title--text {
-	font-family: 'Montserrat', serif;
 	font-size: 8rem;
 	position: absolute;
 	top: 50vh;
@@ -129,7 +129,6 @@ img {
 
 
 .section__one--text {
-	font-family: 'Montserrat', serif;
 	font-size: 2rem;
 	position: absolute;
 	top: 60%;
@@ -143,8 +142,7 @@ img {
 }
 
 .section__one--text2 {
-	font-family: 'Raleway', serif;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	position: absolute;
 	top: 66%;
 	left: 9.4%;
@@ -168,7 +166,6 @@ img {
 
 .section__two {
 	transform: translateY(75%);
-	font-family: "Montserrat";
 }
 
 .section__two--rect {
@@ -180,7 +177,6 @@ img {
 }
 
 .countdown-container {
-	font-family: 'Montserrat', serif;
 	font-size: 5.5rem;
 	font-weight: 500;
 	position: absolute;
@@ -246,7 +242,6 @@ img {
 }
 
 .section__three {
-	font-family: 'Montserrat', serif;
 	transform: translateY(95%);
 }
 
@@ -490,7 +485,6 @@ img {
 }
 
 .section__five .parallax__layer--base h1 {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 10rem;
 	position: absolute;
 	top: 463%;
@@ -501,7 +495,6 @@ img {
 
 .section__five .parallax__layer--front p {
 	position: absolute;
-	font-family: 'Montserrat', sans-serif;
 	top: 492%;
 	left: 46%;
 	text-align: center;
@@ -510,7 +503,6 @@ img {
 .section__five .parallax__layer--front a {
 	text-decoration: none;
 	color: inherit;
-	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	top: 502%;
 	left: 53%;
